@@ -26,11 +26,35 @@
     <h2><b>Strings</b></h2>
     <ul>
         <li>you can assign strings using " " or ' '</li>
+        <br>
+        <li>however, if you have multiple variables you need to print out, it is much easier to use ` ` </li>
+        <ul>
+            <li>for ex: const greeting = `Hello, ${name}!`;</li>
+            <li>it's like f-strings but without the f</li>
+            <li>you can also alter the variables within the { } like add or minus, etc</li>
+            <li>furthermore, you don't need to add \n for line breaks, just add the line breaks within the text</li>
+        </ul>
+        <br>
         <li>you can concatenate strings using + or .concat() </li>
         <ul>
             <li>for ex: let result = str1.concat(' ', str2); will join string 1, a space and string 2 together</li>
         </ul>
+        <br>
         <li>you can append strings using +=</li>
+        <br>
+        <li>you can access characters in a string just like python, through index-based square brackets</li>
+        <ul>
+            <li>to access the last character, do: word[word.length - 1]</li>
+        </ul>
+        <li>to add newlines within a string, add them within the string statement.</li>
+        <ul>
+            <li>let poem = "poem start \n poem end \n"</li>
+        </ul>
+        <li>to include special characters like " " within a string add \"...\" within a string, add them within the string statement.</li>
+        <ul>
+            <li>to include ' ', you only need to add one \, right before the ' '. so like this: \' '</li>
+        </ul>
+        <li>you can grab a strings length with .length</li>
     </ul>
     
     <!-- 
@@ -53,6 +77,65 @@
         </ul>
         
     </ul>
+    <!-- 
+    * METHODS
+    -->
+    <h2><b>Methods</b></h2>
+    <ul>
+        <li>to find a subsequence within a string, you can use the indexOf("subsequence", "OPTIONAL: starting index. default is 0") method.</li>
+        <ul>
+            <li>returns index where the subsequence begins. will return -1 if not in string. it is CASE-SENSITIVE</li>
+        </ul>
+        <li>the prompt method pops up a dialog box to get an answer from the user</li>
+        <ul>
+            <li>takes two arguments: prompt("message that the user will read". "what the input text field will initially have")</li>
+            <li>store in variable</li>
+        </ul>
+        <br>
+        <li>the includes() method will return true or false based on whether or not the substring in the () is in a string.</li>
+        <ul>
+            <li>for ex: string.includes("love island"); -> will either return true or false based on if love island is in string</li>
+            <li>it is case sensitive</li>
+            <li>you can also check if the substring is there based on a certain index by including the index as the 2nd parameter</li>
+        </ul>
+        <br>
+        <li>the slice() method allows you to take a portion of a string and return it as a new string without modifying the 1st string</li>
+        <ul>
+            <li>takes two parameters: starting index and ending index of the portion of string you want to "slice"</li>
+            <li>if you omit the second parameter, it will slice everything from the starting index onwards</li>
+        </ul>
+        <br>
+        <li>.toLowerCase() and .toUpperCase() will transform the entire string to either lower or uppercase</li>
+        <br>
+        <li>the .trim() method will remove any whitespace from the leading or trailing end of a string but not from the middle</li>
+        <ul>
+            <li>.trimStart() only removes whitespace from leading end.</li>
+            <li>.trimEnd() only removes whitespace from the trailing end.</li>
+        </ul>
+        <br>
+        <li>the .replace() method will replace parts of a string with another string.</li>
+        <ul> 
+            <li>format: string.replace(searchValue, newValue); -> searchValue = part of string you want to replace with newValue</li>
+            <li>it will only replace the first occurrence</li>
+            <li>it is case sensitive</li>
+        </ul>
+        <br>
+        <li>the .repeat() method allows you to repeat a string as many times as specified in the parameter</li>
+        <ul>
+            <li>the parameter is the number of times you want it repeated</li>
+        </ul>
+        <br>
+    </ul>
+    
+     <!-- 
+    * NUMBERS
+    -->
+    <h2><b>Numbers</b></h2>
+    <ul>
+        <li>A number data type in JavaScript can be of any type of number (float, integer, etc). They are all the same: a number</li>
+        
+    </ul>
+
 
 
 
