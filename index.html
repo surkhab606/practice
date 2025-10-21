@@ -29,7 +29,7 @@
         <br>
         <li>however, if you have multiple variables you need to print out, it is much easier to use ` ` </li>
         <ul>
-            <li>for ex: const greeting = `Hello, ${name}!`;</li>
+            <li><pre>ex: const greeting = `Hello, ${name}!`;</pre></li>
             <li>it's like f-strings but without the f</li>
             <li>you can also alter the variables within the { } like add or minus, etc</li>
             <li>furthermore, you don't need to add \n for line breaks, just add the line breaks within the text</li>
@@ -37,7 +37,7 @@
         <br>
         <li>you can concatenate strings using + or .concat() </li>
         <ul>
-            <li>for ex: let result = str1.concat(' ', str2); will join string 1, a space and string 2 together</li>
+            <li><pre>ex: let result = str1.concat(' ', str2); will join string 1, a space and string 2 together</pre></li>
         </ul>
         <br>
         <li>you can append strings using +=</li>
@@ -72,59 +72,86 @@
     <ul>
         <li>typeof operator allows you to see the data type of a variable. it will print out a string</li>
         <ul>
-            <li>ex: let isUserLoggedIn = true;
-                console.log(typeof isUserLoggedIn);</li>
+            <li><pre>ex: let isUserLoggedIn = true;
+    console.log(typeof isUserLoggedIn);</pre></li>
         </ul>
         <li>the == operator will perform comparisons after type coercion (it will set all variables being compared to the same type). if you don't want this to occur, use === which will not use type coercion. </li>
+        <br>
+        <li>the unary operator '+' will convert variables to a Number. </li>
+        <ul>
+            <li><pre>ex: const str = '42';
+    const strToNum = +str;</pre></li>
+        </ul>
+        <li>the unary operator '-' will do the same thing as '+' but flip the sign of the number that results.</li>
+        <br>
+        <li>the unary operator '!' will flip the boolean result of a variable. </li>
+        <br>
+        <li>the ternary operator is a simple way to write if-else statements. it's format is: condition ? expressionIfTrue : expressionIfFalse</li>
+        <br>
+        <li>if you want to use 'and' for an if-else, use &&</li>
+        <li>if you want to use 'or' for an if-else, use ||</li>
+        <li>you can also use ?? which will only return a result if a value is null or undefined</li>
+        <ul>
+            <li><pre>ex: const userSettings = {
+                    theme: null,
+                    volume: 0,
+                    notifications: false,
+                };
+               
+    let theme = userSettings.theme ?? 'light';
+    console.log(theme); // light</pre></li>
+        </ul>
     </ul>
     <!-- 
     * METHODS
     -->
     <h2><b>Methods</b></h2>
     <ul>
-        <li>to find a subsequence within a string, you can use the indexOf("subsequence", "OPTIONAL: starting index. default is 0") method.</li>
+        <li>to find a subsequence within a string, you can use the <b>indexOf</b>("subsequence", "OPTIONAL: starting index. default is 0") method.</li>
         <ul>
             <li>returns index where the subsequence begins. will return -1 if not in string. it is CASE-SENSITIVE</li>
         </ul>
-        <li>the prompt method pops up a dialog box to get an answer from the user</li>
+        <br>
+        <li>the <b>prompt()</b> method pops up a dialog box to get an answer from the user</li>
         <ul>
             <li>takes two arguments: prompt("message that the user will read". "what the input text field will initially have")</li>
             <li>store in variable</li>
         </ul>
         <br>
-        <li>the includes() method will return true or false based on whether or not the substring in the () is in a string.</li>
+        <li>the <b>includes()</b> method will return true or false based on whether or not the substring in the () is in a string.</li>
         <ul>
-            <li>for ex: string.includes("love island"); -> will either return true or false based on if love island is in string</li>
+            <li><pre>ex: string.includes("love island"); -> will either return true or false based on if love island is in string</pre></li>
             <li>it is case sensitive</li>
             <li>you can also check if the substring is there based on a certain index by including the index as the 2nd parameter</li>
         </ul>
         <br>
-        <li>the slice() method allows you to take a portion of a string and return it as a new string without modifying the 1st string</li>
+        <li>the <b>slice()</b> method allows you to take a portion of a string and return it as a new string without modifying the 1st string</li>
         <ul>
             <li>takes two parameters: starting index and ending index of the portion of string you want to "slice"</li>
             <li>if you omit the second parameter, it will slice everything from the starting index onwards</li>
         </ul>
         <br>
-        <li>.toLowerCase() and .toUpperCase() will transform the entire string to either lower or uppercase</li>
+        <li><b>.toLowerCase()</b> and <b>.toUpperCase()</b> will transform the entire string to either lower or uppercase</li>
         <br>
-        <li>the .trim() method will remove any whitespace from the leading or trailing end of a string but not from the middle</li>
+        <li>the <b>.trim()</b> method will remove any whitespace from the leading or trailing end of a string but not from the middle</li>
         <ul>
-            <li>.trimStart() only removes whitespace from leading end.</li>
-            <li>.trimEnd() only removes whitespace from the trailing end.</li>
+            <li>.<b>trimStart()</b> only removes whitespace from leading end.</li>
+            <li><b>trimEnd()</b> only removes whitespace from the trailing end.</li>
         </ul>
         <br>
-        <li>the .replace() method will replace parts of a string with another string.</li>
+        <li>the <b>.replace()</b> method will replace parts of a string with another string.</li>
         <ul> 
             <li>format: string.replace(searchValue, newValue); -> searchValue = part of string you want to replace with newValue</li>
             <li>it will only replace the first occurrence</li>
             <li>it is case sensitive</li>
         </ul>
         <br>
-        <li>the .repeat() method allows you to repeat a string as many times as specified in the parameter</li>
+        <li>the <b>.repeat()</b> method allows you to repeat a string as many times as specified in the parameter</li>
         <ul>
             <li>the parameter is the number of times you want it repeated</li>
         </ul>
         <br>
+        <li>the </li>
     </ul>
     
      <!-- 
