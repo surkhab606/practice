@@ -79,7 +79,7 @@
             <li><pre>ex: let isUserLoggedIn = true;
     console.log(typeof isUserLoggedIn);</pre></li>
         </ul>
-        <li>the == operator will perform comparisons after type coercion (it will set all variables being compared to the same type). if you don't want this to occur, use === which will not use type coercion. </li>
+        <li>the <b>== operator will perform comparisons after type coercion (it will set all variables being compared to the same type). if you don't want this to occur, use === which will not use type coercion.</b> </li>
         <br>
         <li>the unary operator '+' will convert variables to a Number. </li>
         <ul>
@@ -113,25 +113,25 @@
     -->
     <h2><b>Methods</b></h2>
     <ul>
-        <li>to find a subsequence within a string, you can use the <b>indexOf</b>("subsequence", "OPTIONAL: starting index. default is 0") method.</li>
+        <li>to find a subsequence within a string, you can use the <b>.indexOf</b>("subsequence", "OPTIONAL: starting index. default is 0") method.</li>
         <ul>
             <li>returns index where the subsequence begins. will return -1 if not in string. it is CASE-SENSITIVE</li>
         </ul>
         <br>
-        <li>the <b>prompt()</b> method pops up a dialog box to get an answer from the user</li>
+        <li>the <b>.prompt()</b> method pops up a dialog box to get an answer from the user</li>
         <ul>
             <li>takes two arguments: prompt("message that the user will read". "what the input text field will initially have")</li>
             <li>store in variable</li>
         </ul>
         <br>
-        <li>the <b>includes()</b> method will return true or false based on whether or not the substring in the () is in a string.</li>
+        <li>the <b>.includes()</b> method will return true or false based on whether or not the substring in the () is in a string.</li>
         <ul>
             <li><pre>ex: string.includes("love island"); -> will either return true or false based on if love island is in string</pre></li>
             <li>it is case sensitive</li>
             <li>you can also check if the substring is there based on a certain index by including the index as the 2nd parameter</li>
         </ul>
         <br>
-        <li>the <b>slice()</b> method allows you to take a portion of a string and return it as a new string without modifying the 1st string</li>
+        <li>the <b>.slice()</b> method allows you to take a portion of a string and return it as a new string without modifying the 1st string</li>
         <ul>
             <li>takes two parameters: starting index and ending index of the portion of string you want to "slice"</li>
             <li>if you omit the second parameter, it will slice everything from the starting index onwards</li>
@@ -141,8 +141,8 @@
         <br>
         <li>the <b>.trim()</b> method will remove any whitespace from the leading or trailing end of a string but not from the middle</li>
         <ul>
-            <li>.<b>trimStart()</b> only removes whitespace from leading end.</li>
-            <li><b>trimEnd()</b> only removes whitespace from the trailing end.</li>
+            <li>.<b>.trimStart()</b> only removes whitespace from leading end.</li>
+            <li><b>.trimEnd()</b> only removes whitespace from the trailing end.</li>
         </ul>
         <br>
         <li>the <b>.replace()</b> method will replace parts of a string with another string.</li>
@@ -168,8 +168,8 @@
         <li>the <b>Math.pow()</b> method takes two numbers in it's parameters and returns the value of the first number raised to the second</li>
         <br>
 
-        <li>the <b>parseFloat()</b> method allows you to take a string parameter and pull a float out of it. it starts from the beginning of the string, so if you have letters preceding a float number, it will return NaN. however, if you have letters after a float number, it will return just the float number.</li>
-        <li>the <b>parseInt()</b> method allows you to take a string parameter and pull an integer out of it. it starts from the beginning of the string, so if you have letters preceding an integer number, it will return NaN. however, if you have letters after an integer number, it will return just the integer.</li>
+        <li>the <b>.parseFloat()</b> method allows you to take a string parameter and pull a float out of it. it starts from the beginning of the string, so if you have letters preceding a float number, it will return NaN. however, if you have letters after a float number, it will return just the float number.</li>
+        <li>the <b>.parseInt()</b> method allows you to take a string parameter and pull an integer out of it. it starts from the beginning of the string, so if you have letters preceding an integer number, it will return NaN. however, if you have letters after an integer number, it will return just the integer.</li>
         <ul>
             <li>both of the above methods will ignore leading whitespace, and handle plus and minus' at the beginnings of numbers (i.e. they will include the minus on a minus number).</li>
         </ul>
