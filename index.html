@@ -198,6 +198,44 @@
         </ul>
     </ul>
 
+     <!-- 
+    * FUNCTIONS
+    -->
+    <h2><b>Variables</b></h2>
+    <ul>
+        <li>to declare a function: </li>
+        <ul>
+            <li><pre>function greet(name) { 
+    console.log("Hello" + name + "!");
+}
+
+greet("Nick"); //Hello Nick!
+            </pre></li>
+        </ul>
+        <li>you can set default parameters like name="Guest" in case the function is called without an argument </li>
+        <br>
+        <li>you can also create arrow functions: </li>
+        <ul>
+            <li><pre>const greetings = name => { 
+    console.log("Hello" + name + "!");
+};
+
+greet("Nick"); //Hello Nick!
+            </pre></li>
+        </ul>
+        <li>arrow function notes: you need to add brackets around parameters if there is MORE than one. if your arrow function has no parameters, you need to add ().</li>
+        <li>another example:</li>
+        <ul>
+            <li><pre>const calculateArea = (width, height) => {
+        const area = width * height;
+        return area;
+};
+
+console.log(calculateArea(5, 3)); //15
+
+            </pre></li>
+        </ul>
+    </ul>
 
 
 
