@@ -18,6 +18,10 @@
     <ul>
         <li>use let when you want to be able to reassign variables later on</li>
         <li>use const when you don't want to change variables once they've been set</li>
+        <br>
+        
+        <li>a variable is undefined when it has been declared but not assigned anything</li>
+        <li>a variable is null when it intentionally has no value</li>
     </ul>
 
     <!-- 
@@ -102,6 +106,8 @@
     console.log(theme); // light</pre></li>
         </ul>
     </ul>
+
+
     <!-- 
     * METHODS
     -->
@@ -155,13 +161,28 @@
         <li>the formula to generate a random number between two numbers is: <b>Math.random() * (max - min) + min;</b></li>
         <li>the <b>Math.min()</b> and <b>Math.max()</b> will grab the smallest and largest numbers in their parameters respectively</li>
         <li>to round numbers up, use <b>Math.ceil()</b> and to round numbers down, use <b>Math.floor()</b></li>
-        <li>the <b>Math.round() will round the number to the nearest integer, rounding up or down as needed</b></li>
+        <li>the <b>Math.round()</b> round the number to the nearest integer, rounding up or down as needed</b></li>
         <li>the <b>Math.trunc()</b> method removes the decimal part of a number, without rounding</li>
         <li>the <b>Math.sqrt()</b> method takes the square root of a number, and the <b>Math.cbrt()</b>method takes the cube root</li>
         <li>the <b>Math.abs()</b> method will grab the absolute value of a number</li>
-        <li>the <b>Math.pow()</b> method takes two numbers in it's parameters and returns the value of the first number raised to the second/li>
+        <li>the <b>Math.pow()</b> method takes two numbers in it's parameters and returns the value of the first number raised to the second</li>
+        <br>
+
+        <li>the <b>parseFloat()</b> method allows you to take a string parameter and pull a float out of it. it starts from the beginning of the string, so if you have letters preceding a float number, it will return NaN. however, if you have letters after a float number, it will return just the float number.</li>
+        <li>the <b>parseInt()</b> method allows you to take a string parameter and pull an integer out of it. it starts from the beginning of the string, so if you have letters preceding an integer number, it will return NaN. however, if you have letters after an integer number, it will return just the integer.</li>
+        <ul>
+            <li>both of the above methods will ignore leading whitespace, and handle plus and minus' at the beginnings of numbers (i.e. they will include the minus on a minus number).</li>
+        </ul>
+        <br>
+
+        <li>the <b>.toFixed()</b> method formats the number of numbers after the decimal point of a number (wow a lot of numbers) based on the number in it's parameter. get it? it will return a <b>string</b> not a number. it will also round up or down as well when cutting off numbers.</li>
+        <ul>
+            <li>if you call .toFixed() with nothing in the parameters, it will return a string value of the number without any decimals and thus without any numbers after the decimal. </li>
+        </ul>
     </ul>
     
+
+
      <!-- 
     * NUMBERS
     -->
@@ -170,6 +191,11 @@
         <li>A number data type in JavaScript can be of any type of number (float, integer, etc). They are all the same: a number</li>
         <li>Multiplication and division take precedence over addition and subtraction. Add brackets if you need add/sub to be prioritized first.</li>
         <li>prefix: --x. postfix: x--. basically, prefix means that the variable will immediately decrement one if you log it. but with postfix, it will only be incremented after it is called again</li>
+        <br>
+        <li><b>NaN</b> stands for 'Not a Number'. <b>Number.isNan()</b> is a method that allows you to check for NaN values.</li>
+        <ul>
+            <li>NaN is returned whenever we get undefined when we should get a number data type value (ex: running 0 / 0). it is important to account for NaN if it is a possibility in your program.</li>
+        </ul>
     </ul>
 
 
