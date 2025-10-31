@@ -106,6 +106,8 @@
     let theme = userSettings.theme ?? 'light';
     console.log(theme); // light</pre></li>
         </ul>
+        <br>
+        <li>the spread operator allows you to simply copy an array without modifying it. it works by doing the following: let copy = [...original]</li>
     </ul>
 
 
@@ -116,7 +118,7 @@
     <ul>
         <li>to find a subsequence within a string, you can use the <b>.indexOf</b>("subsequence", "OPTIONAL: starting index. default is 0") method.</li>
         <ul>
-            <li>this also works with <b>arrays</b>. .indexOf(element, fromIndex) will return the index of element beginning fromIndex. if fromIndex is left blank, it will default to 0.</li>
+            <li>this also works with <b>arrays</b>. .indexOf(element, fromIndex) will return the index of element beginning fromIndex. if fromIndex is left blank, it will default to 0. .indexOf applied on an array will return -1 if the element is not in the array.</li>
             <li>returns index where the subsequence begins. will return -1 if not in string. it is CASE-SENSITIVE</li>
         </ul>
         <br>
@@ -131,17 +133,26 @@
             <li><pre>ex: string.includes("love island"); -> will either return true or false based on if love island is in string</pre></li>
             <li>it is case sensitive</li>
             <li>you can also check if the substring is there based on a certain index by including the index as the 2nd parameter</li>
+            <li>this method will also return true or false based on whether or not an element is in an <b>array.</b> you can set the 2nd index to the index where you want to start the search from. </li>
         </ul>
         <br>
         <li>the <b>.slice()</b> method allows you to take a portion of a string and return it as a new string without modifying the 1st string</li>
         <ul>
             <li>takes two parameters: starting index and ending index of the portion of string you want to "slice"</li>
             <li>if you omit the second parameter, it will slice everything from the starting index onwards</li>
+            <li>it also works on <b>arrays</b>. by applying it on an array, you will create a new copy of the array.</li>
         </ul>
         <br>
         <li>the <b>.split()</b> method divides a string into an array of substrings.</li>
         <ul>
             <li>it takes one parameter, the separator. if set to "", it will separate every character in the string. if set to " " it will seperate based on where spaces are.</li>
+        </ul>
+        <br>
+        <li>the <b>.splice()</b>method allows you to add or remove elements from any position in an array. the return value is an array of the items removed, or an empty array if nothing was removed. .splice() will modify the array in place.</li>
+        <ul>
+            <li>.splice() takes 4 parameters. startIndex is the first, which specifies the starting index to splice from. itemsToRemove is the optional, second parameter that specifies how many elements to remove. if it is omitted, it will remove all elements from startIndex, including arr[startIndex]. item1, item2, and beyond are the elements to add into the array from startIndex.</li>
+            <li>by applying .splice(0), you can clear an entire array.</li>
+            <li>because .splice() modifies an array in place, it can be useful to make a copy of the array and apply .splice() to the copy if you want the original array intact.</li>
         </ul>
         <br>
         <li>the <b>.reverse()</b> method reverses the elements of an array in place.</li>
