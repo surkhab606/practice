@@ -138,6 +138,18 @@
             <li>if you omit the second parameter, it will slice everything from the starting index onwards</li>
         </ul>
         <br>
+        <li>the <b>.split()</b> method divides a string into an array of substrings.</li>
+        <ul>
+            <li>it takes one parameter, the separator. if set to "", it will separate every character in the string. if set to " " it will seperate based on where spaces are.</li>
+        </ul>
+        <br>
+        <li>the <b>.reverse()</b> method reverses the elements of an array in place.</li>
+        <br>
+        <li>the <b>.join()</b> method creates and returns a new string by concatenating all of the elements in an array.</li>
+        <ul>
+            <li>it takes one paramter, the joiner. if set to "" it will join all characters in an array into a string.</li>
+        </ul>
+        <br>
         <li><b>.toLowerCase()</b> and <b>.toUpperCase()</b> will transform the entire string to either lower or uppercase</li>
         <br>
         <li>the <b>.trim()</b> method will remove any whitespace from the leading or trailing end of a string but not from the middle</li>
@@ -247,29 +259,52 @@ console.log(calculateArea(5, 3)); //15
         <br>
         <li>to add to an array, you have a few options:</li>
         <ul>
-            <li><b>push()</b>can be used to add one or more elements to the END of an array. just do array.push("..."). it is similar to .append in python.</li>
-            <li><b>pop()</b>can be used to remove the last element of the array. just do array.pop(). 1:1 the same as python.</li>
-            <li><b>unshift()</b>can be used to add one or more elements to the START of an array. just do array.unshift("...").</li>
-            <li><b>shift()</b>can be used to remove the first element of the array. just do array.shift().</li>
+            <li><b>push()</b> can be used to add one or more elements to the END of an array. just do array.push("..."). it is similar to .append in python.</li>
+            <li><b>pop()</b> can be used to remove the last element of the array. just do array.pop(). 1:1 the same as python.</li>
+            <li><b>unshift()</b> can be used to add one or more elements to the START of an array. just do array.unshift("...").</li>
+            <li><b>shift()</b> can be used to remove the first element of the array. just do array.shift().</li>
         </ul>
         <br>
-        <li><b>array destructuring</b>allows you to take each element out of an array and assign it to a variable, in one line.</li>
+        <li><b>array destructuring</b> allows you to take each element out of an array and assign it to a variable, in one line.</li>
         <ul>
             <li><pre>let fruits = ["apple", "banana", "orange"];
 
-            let [first, second, third] = fruits;
-            console.log(first);  // "apple"
-            console.log(second); // "banana"
-            console.log(third);  // "orange"
+let [first, second, third] = fruits;
+console.log(first);  // "apple"
+console.log(second); // "banana"
+console.log(third);  // "orange"
             </pre></li>
         </ul>
         <li>you can skip over elements you don't want to destructure by using a comma.</li>
         <ul>
             <li><pre>let colors = ["red", "green", "blue", "yellow"];
-            let [firstColor, , thirdColor] = colors;
 
-            console.log(firstColor); // Output: "red"
-            console.log(thirdColor); // Output: "blue"
+let [firstColor, , thirdColor] = colors;
+
+console.log(firstColor); // Output: "red"
+console.log(thirdColor); // Output: "blue"
+
+            </pre></li>
+        </ul>
+        <li>you can also set default values.</li>
+        <ul>
+            <li><pre>let numbers = [1, 2];
+let [a, b, c = 3] = numbers;
+
+console.log(a); // 1
+console.log(b); // 2
+console.log(c); // 3
+
+            </pre></li>
+        </ul>
+        <li>rest syntax is pretty neat.</li>
+        <ul>
+            <li><pre>let fruits = ["apple", "banana", "orange", "mango", "kiwi"];
+let [first, second, ...rest] = fruits;
+
+console.log(first);  // "apple"
+console.log(second); // "banana"
+console.log(rest);   // ["orange", "mango", "kiwi"]
 
             </pre></li>
         </ul>
