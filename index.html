@@ -381,11 +381,44 @@ console.log(person["age"]); //  30
         </ul>
         <li>and if one of your properties has an array as it's value, you can access the array as such:</li>
         <ul>
-            <li><pre>console.log(person.addresses[1].city); // "Workville"
+            <li><pre>const person = {
+        name: "Alice",
+        age: 30,
+        addresses: [
+            { type: "home", street: "123 Main St", city: "Anytown" },
+            { type: "work", street: "456 Market St", city: "Workville" }
+        ]
+};
+
+console.log(person.addresses[1].city); // "Workville"
 
             </pre></li>
         </ul>
 
+    </ul>
+
+    <!-- 
+    * JSON
+    -->
+    <h2><b>JSON</b></h2>
+    <ul>
+        <li>JSON stands for JavaScript Object Notation.</li>
+        <ul>
+            <li>an example of a JSON Object is: </li>
+            <li><pre>{
+    "name": "Alice",
+    "age": 30,
+    "isStudent": false,
+    "list of courses": ["Mathematics", "Physics", "Computer Science"]
+}
+            </pre></li>
+            <li>you can access them using dot and bracket notation, just like normal objects.</li>
+        </ul>
+        <li>there are two main methods for JSON:</li>
+        <ul>
+            
+        </ul>
+        
     </ul>
 
 
