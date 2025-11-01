@@ -322,6 +322,72 @@ console.log(rest);   // ["orange", "mango", "kiwi"]
         </ul>
     </ul>
 
+     <!-- 
+    * OBJECTS
+    -->
+    <h2><b>Objects</b></h2>
+    <ul>
+        <li>an <b>object</b> is a fundamental data structure that allows you to store properties, which are key:value pairs.</li>
+        <li>ex:</li>
+        <ul>
+            <li><pre>const person = {
+    name: "Alice",
+    age: 30,
+    city: "New York"
+};
+            </pre></li>
+        </ul>
+        <li>there are two ways to access objects. dot notation and bracket notation.</li>
+        <li>the most common method to access objects is dot notation: </li>
+        <ul>
+            <li><pre>console.log(person.name);  // Alice
+console.log(person.age); //30
+            </pre></li>
+        </ul>
+        <li>bracket notation is pretty simple as well though:</li>
+        <ul>
+            <li><pre>console.log(person["name"]); // Alice
+console.log(person["age"]); //  30
+                
+            </pre></li>
+            <li>as well, if your property is named with spaces, or dynamic properties, you <b>have</b> to use bracket notation, as dot notation will not work.</li>
+        </li>
+        </ul>
+        <br>
+        <li>to remove properties from an object, use <b>delete</b>. ex: delete person.job;</li>
+        <br>
+        <li>to check if an object has a property, there are a few options. the 1st option is <b>.hasOwnProperty()</b>.</li>
+        <ul>
+            <li>this method will return a boolean based on if an object has the property within the parameters.</li>
+        </ul>
+        <li>the second option is to use <b>in</b>.</li>
+        <ul>
+            <li>this method is extremely similar to the above method. ex: console.log("name" in person); //true </li>
+        </ul>
+        <li>the third option is to check against undefined. however, this method has limitations (and also why do all that?)</li>
+        <br>
+        <li>to access nested properties, you can again, either use bracket or dot notation.</li>
+        <ul>
+            <li>dot notation: </li>
+            <ul>
+                <li><pre>console.log(person.contact.phone.work); // "098-765-4321"
+                </pre></li>
+            </ul>
+            <li>bracket notation: </li>
+            <ul>
+                <li><pre>console.log(person['contact']['phone']['work']); // "098-765-4321"
+                </pre></li>
+            </ul>
+        </ul>
+        <li>and if one of your properties has an array as it's value, you can access the array as such:</li>
+        <ul>
+            <li><pre>console.log(person.addresses[1].city); // "Workville"
+
+            </pre></li>
+        </ul>
+
+    </ul>
+
 
 </body>
 
