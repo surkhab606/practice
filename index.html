@@ -108,6 +108,8 @@
         </ul>
         <br>
         <li>the spread operator allows you to simply copy an array without modifying it. it works by doing the following: let copy = [...original]</li>
+        <br>
+        <li>the <b>optional chaining operator</b> is the ? you see in ternary operators. it tells javascript to only continue with the operation if the object/value before the ? exists and is not undefined or null.</li>
     </ul>
 
 
@@ -414,9 +416,19 @@ console.log(person.addresses[1].city); // "Workville"
             </pre></li>
             <li>you can access them using dot and bracket notation, just like normal objects.</li>
         </ul>
+        <br>
         <li>there are two main methods for JSON:</li>
         <ul>
-            
+            <li><b>JSON.parse()</b> and <b>JSON.stringify()</b>.</li>
+            <br>
+            <ul>
+                <li>JSON.stringify() converts a JSON object into a JSON string.</li>
+                <ul>
+                    <li><pre>ex: '{"name":"John","age":30,"isAdmin":true}'
+                    </pre></li>
+                </ul>
+                <li>JSON.parse() converts a JSON string back into a JSON object.</li>
+            </ul>
         </ul>
         
     </ul>
