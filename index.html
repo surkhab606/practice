@@ -452,13 +452,40 @@ console.log(age);  // 30
     <h2><b>Loops</b></h2>
     <ul>
         <li>for loops in JavaScript are the same as Java. basic structure: 
-            <pre>for (let i = 0; i < condition; i++;) { 
+            <pre>for (let i = 0; i < condition; i++) { 
 
     ... 
 
 }</pre> </li>
-        <li></li>
-        
+        <br>
+        <li>one new addition is the 'for ... of ... loop' </li>
+        <pre>for(const num of numbers) {
+    
+    console.log(num); //logs every number in numbers
+
+}
+        </pre>
+        <br>
+        <li>further, we also have the 'for ... in ... loop' which are best used to loop over properties</li>
+        <pre>const fruit = {
+    name: 'apple',
+    color: 'red',
+    price: 0.99
+};
+          
+for (const prop in fruit) {
+
+    console.log(fruit[prop]); //will log 'apple', 'red', 0.99
+
+}</pre>
+        <br></nr>
+        <li>while loops make a come back, and are mostly the same.</li>
+        <pre>let counter = 0;
+while(counter < 5) {
+  console.log(counter);
+  counter++;
+}
+        </pre>
     </ul>
 
 
